@@ -27,7 +27,7 @@ public class ReservationService {
         this.reservationRepository = reservationRepository;
     }
 
-//  Service Object
+//  ReservationService Object
     public List<RoomReservation> getRoomReservationsForDate(Date date){
         Iterable<Room> rooms = this.roomRepository.findAll();
 
