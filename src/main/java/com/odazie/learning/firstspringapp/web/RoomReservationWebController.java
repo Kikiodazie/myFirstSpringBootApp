@@ -2,7 +2,6 @@ package com.odazie.learning.firstspringapp.web;
 
 import com.odazie.learning.firstspringapp.business.domain.RoomReservation;
 import com.odazie.learning.firstspringapp.business.service.ReservationService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +16,7 @@ import java.util.List;
 public class RoomReservationWebController {
     private final ReservationService reservationService;
 
-    @Autowired
+
     public RoomReservationWebController(ReservationService reservationService) {
         this.reservationService = reservationService;
     }

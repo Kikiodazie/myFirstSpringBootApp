@@ -3,7 +3,6 @@ package com.odazie.learning.firstspringapp.web;
 
 import com.odazie.learning.firstspringapp.business.domain.RoomReservation;
 import com.odazie.learning.firstspringapp.business.service.ReservationService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +16,7 @@ import java.util.List;
 public class RoomReservationWebServiceController {
     private final ReservationService reservationService;
 
-    @Autowired
+
     public RoomReservationWebServiceController(ReservationService reservationService) {
         this.reservationService = reservationService;
     }

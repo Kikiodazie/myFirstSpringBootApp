@@ -5,6 +5,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/// In Your next project you should is use LocalDate or LocalDateTime class because date is deprecated
+
 public class DateUtils {
     private static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyy-MM-d");
 
